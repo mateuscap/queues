@@ -15,4 +15,4 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - sleep 30
+            - sleep 301
