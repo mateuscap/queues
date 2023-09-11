@@ -4,6 +4,10 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu2004
+queue:
+  - when: branch =~ '.branch$'
+    name: side_branches
+    scope: project
 blocks:
   - name: 'Block #1'
     task:
@@ -11,4 +15,4 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - sleep 300
+            - sleep 150
