@@ -5,12 +5,13 @@ agent:
     type: e1-standard-2
     os_image: ubuntu2004
 queue:
-  - when: branch =~ '.branch$'
-    name: side_branches
-    scope: project
+#  - when: branch =~ '.branch$'
+#    name: side_branches
+#    scope: project
 
-  - when: pull_request =~ '.*'
+  - when: pull_request =~ '^PR_.'
     name: pullrequest
+    
 blocks:
   - name: 'Block #1'
     task:
