@@ -15,7 +15,7 @@ blocks:
           commands:
             - checkout
             - sleep 60
-            - echo "THE FRIST AGAIN"
+            - echo "NOW IT's the Second"
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
