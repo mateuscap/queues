@@ -14,8 +14,8 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - sleep 30
-            - echo "the second one"
+            - sleep 60
+            - echo "THE FRIST AGAIN"
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
