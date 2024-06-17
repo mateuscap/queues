@@ -15,3 +15,5 @@ blocks:
           commands:
             - checkout
             - sleep 60
+    skip:
+      when: branch = 'master'
