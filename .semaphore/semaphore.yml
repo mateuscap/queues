@@ -16,4 +16,10 @@ blocks:
             - checkout
             - sleep 60
     skip:
-      when: change_in('/test')
+      when: 'change_in(''/test'', {pipeline_file: ''ignore''})'
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - echo "block 2"
