@@ -6,7 +6,7 @@ agent:
     os_image: ubuntu2004
 queue:
   - when: pull_request =~ '^PR_.'
-    name: pullrequest
+    name: pullrequest-$SEMAPHORE_GIT_PR_NUMBER
 blocks:
   - name: 'Block #1'
     task:
