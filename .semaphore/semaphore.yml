@@ -14,7 +14,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - sleep 60
+            - sleep 61
             - echo "NOW IT's the Second"
 promotions:
   - name: Promotion 1
